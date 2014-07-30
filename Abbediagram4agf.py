@@ -1,6 +1,6 @@
 #coding:utf-8
 '''
-read Abbe number and refractive index in a .agf file,and plot the Abbe diagram
+read glass name,Abbe number and refractive index in a .agf file,and plot the Abbe diagram
 '''
 
 from matplotlib.widgets import Cursor
