@@ -29,6 +29,7 @@ ax.set_ylim(1.4, 2.05)
 ax.set_xlabel('Abbe number $V$ ')
 ax.set_ylabel('Refractive Index $n_d$ ($\lambda_d$=587.6nm) ')
 
+# Turn on for lableing every data point with glassname
 for i, txt in enumerate(gname):
 	ax.annotate(txt, (nd[i],vd[i]))
 
