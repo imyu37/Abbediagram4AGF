@@ -15,17 +15,12 @@ file = open('schott.agf','r')
 points_with_annotation = list() # data point with annotation
 lines = file.readlines()
 
-# Facecolor indicate the Status as same as Zemax indicated:Status is 0 for Standard,
-# 1 for Preferred, 2 for Obsolete, 3 for Special, and 4 for Melt.
-fc ={0:"black",1:"green",2:"red",3:"blue",4:"yellow"}
-
 for line in lines:
 	tmp = line.split()
 #	vtmp = float(tmp[4])
 #	ntmp = float(tmp[5])
 	if tmp[0] == 'NM':
-		point, = plt.plot(float(tmp[5]), float(tmp[4]), 'o', markersize=10, markerfacecolor=fc[float(tmp[7])])
-#		plt.legend(('black', 'green', 'red', 'blue', 'yellow'),loc=2)
+		point, = plt.plot(float(tmp[5]), float(tmp[4]), 'o',markersize=10])
 
 		annotation = ax.annotate("%s $nd$=%f $vd$=%f" % (tmp[1],float(tmp[4]), float(tmp[5])),
 			xy=(float(tmp[5]), float(tmp[4])), xycoords='data',
