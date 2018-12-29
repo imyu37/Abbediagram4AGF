@@ -6,7 +6,7 @@ Python script for plotting Abbe diagram with the data in zemax .AGF file
 ###DEMO
 see the following pic.
 
-
 ![AbbeDiagramofCDGM](https://raw.githubusercontent.com/imyu37/Abbediagram4AGF/master/CDGMAbbeDiagram.png)
+
 ###TODO
 **HoverOver**: when the cursor hovers over a data point,the annotaion text will appear next to it.(*DONE*) <br>
