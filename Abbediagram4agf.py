@@ -1,6 +1,15 @@
 #coding:utf-8
+# tested with python 3.7.0
 '''
-Read a .AGF file,and plot the Abbe diagram
+1.名称：Abbediagram4agf.py
+2.目的：Plot the Abbe diagram of the input glass catalog
+3.参考资料：
+3.1 https://stackoverflow.com/questions/11537374/matplotlib-basemap-popup-box#new-answer
+3.2 https://stackoverflow.com/users/741316/pelson
+4.作者：YONG(wanyong_37@hotmail.com)
+5.版本：20190303 v0.2
+  5.1 输入玻璃目录的名称
+  5.2 阿贝图中显示玻璃目录名
 '''
 
 from matplotlib.widgets import Cursor
@@ -12,9 +21,9 @@ ax = plt.axes()
 plt.grid(True)
 plt.locator_params(nbins=20) # grid size
 
-#file = open('misc.agf','r')
-file = open('schott.agf','r')
 #file = open('cdgm.agf','r')
+ngc = input('Please input the name of the glass catalog existed: ')
+file = open(ngc+'.agf','r')
 points_with_annotation = list() # data point with annotation
 lines = file.readlines()
 
@@ -45,7 +54,7 @@ file.close()
 
 ax.set_xlim(100,5)  # extend of abbe number(Vd)
 ax.set_ylim(1.4, 2.1) # extend of index(Nd)
-ax.set_title('Abbe diagram')
+ax.set_title('Abbe diagram of '+ngc+' glasses')
 ax.set_xlabel('Abbe number $V$ ')
 ax.set_ylabel('Refractive Index $n_d$ ($\lambda_d$=587.6nm) ')
 
