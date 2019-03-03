@@ -4,8 +4,8 @@
 1.名称：Abbediagram4agf.py
 2.目的：Plot the Abbe diagram of the input glass catalog
 3.参考资料：
-3.1 https://stackoverflow.com/questions/11537374/matplotlib-basemap-popup-box#new-answer
-3.2 https://stackoverflow.com/users/741316/pelson
+  3.1 https://stackoverflow.com/questions/11537374/matplotlib-basemap-popup-box#new-answer
+  3.2 https://stackoverflow.com/users/741316/pelson
 4.作者：YONG(wanyong_37@hotmail.com)
 5.版本：20190303 v0.2
   5.1 输入玻璃目录的名称
