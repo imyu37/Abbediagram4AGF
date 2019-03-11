@@ -50,6 +50,14 @@ for line in lines:
 		annotation.set_visible(False)
 		points_with_annotation.append([point, annotation])
 
+# Add "legend" with plt.text
+plt.text(99, 2.06, ' Color : Status   ',color='black',fontsize='x-large', fontweight='bold')
+plt.text(97, 2.02, ' blue    : Standard  ',color='blue',ha='left')
+plt.text(97, 1.98, ' green  : Preferred ',color='green',ha='left')
+plt.text(97, 1.94, ' red      : Obsolete  ', color='red',ha='left')
+plt.text(97, 1.90, ' violet  : Special   ', color='violet',ha='left')
+plt.text(97, 1.86, ' black  : Melt      ', color='black',ha='left')
+
 file.close()
 
 ax.set_xlim(100,5)  # extend of abbe number(Vd)
