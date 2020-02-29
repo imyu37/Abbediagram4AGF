@@ -7,7 +7,7 @@ see the following pics.
 
 <img src="https://github.com/imyu37/Abbediagram4AGF/blob/master/Abbediagram4AGF_SCHOTT.png" alt="Abbediagram4AGF_SCHOTT"  width="600" height="498">
 
-<img src="https://github.com/imyu37/Abbediagram4AGF/blob/master/Abbediagram4AGF_SCHOTT.png" alt="Abbediagram4AGF_SCHOTT"  width="600" height="498">
+<img src="https://github.com/imyu37/Abbediagram4AGF/blob/master/abbediag.gif" alt="Abbediagram4AGF_gif_SCHOTT"  width="600" height="498">
 
 ### TODO ###
 **HoverOver**: when the cursor hovers over a data point,the annotaion text will appear next to it.(*DONE*) <br>
